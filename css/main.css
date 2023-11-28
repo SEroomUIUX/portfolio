@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR'; */
+
+/* COMMON - S */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font: 16px/1.2 'Noto Sans KR', dotum, sans-serif;
+  letter-spacing: -1px;
+}
+.skip-nav a {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #f90;
+  position: absolute;
+  left: 0;
+  top: -100px;
+  z-index: 10000;
+}
+.skip-nav a:focus {
+  top: 0;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+.hide {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  position: absolute;
+  left: -9999px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* COMMON - E */
+
+/**********
+HEADER - S 
+**********/
+.header {
+  width: 100%;
+  min-width: 1200px;
+  height: 100px;
+  display: block;
+  margin: 100px 0 0 0;
+}
+.inner {}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #7296c8;
+}
+
+/* GNB - S */
+.gnb {}
+.gnb .web-gnb-depth {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+}
+.gnb .web-gnb-depth .depth {
+  display: flex;
+}
+.gnb .web-gnb-depth .depth a {
+  padding: 0 55px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+/* GNB - E */
+
+/**********
+HEADER - E 
+**********/
+
+/**********
+MAIN - S 
+**********/
+/* MAIN - COMMON - S */
+.container {}
+.container .sec {}
+.container .inner {}
+.container .tit {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 25px 0 20px;
+  color: #a6c6f2
+}
+/* MAIN - COMMON - E */
+
+/* ABOUT - S */
+.about-me-sec {
+  position: relative;
+  margin-bottom: 240px;
+}
+.about-me-sec .inner {}
+/* PROFILEPHOTO - S */
+.profilephoto-img {}
+/* PROFILEPHOTO - S */
+
+
+.about-wrap {
+  position: absolute;
+  right: 20%;
+  top: 13%;
+  box-sizing: border-box;
+  border: solid #7296c8 2px;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.about-wrap .about-wrap-box {
+  display: block;
+
+
+}
+.about-wrap .about-wrap-box .about-wrap-tit {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.about-wrap .about-wrap-box .about-wrap-list {
+  width: 410px;
+  padding-bottom: 10px;
+}
+.about-wrap .about-wrap-box .about-wrap-list .about {
+  font-size: 18px;
+  line-height: 25px;
+}
+.about-wrap .about-wrap-box .about-wrap-list .about > span {
+  float: left;
+  padding-right: 15px;
+  font-weight: 500;
+  color: #777777
+}
+.about-wrap .about-wrap-box .about-wrap-list .about > p {}
+.about-wrap .about-wrap-list .education {
+  font-size: 18px;
+  line-height: 25px;
+}
+.about-wrap .about-wrap-list .education > span {
+  float: left;
+  padding-right: 15px;
+  color: #777777
+}
+.about-wrap .about-wrap-list .education > p {}
+.about-wrap .about-wrap-list .ceritificate {
+  font-size: 18px;
+  line-height: 25px;
+}
+.about-wrap .about-wrap-list .ceritificate > span {
+  float: left;
+  padding-right: 15px;
+  color: #777777
+}
+.about-wrap .about-wrap-list .ceritificate > p {}
+.about-wrap .about-wrap-list .skills {}
+.about-wrap .about-wrap-list .skills .skills-img img {
+  margin-right: 10px;
+}
+/* ABOUT - E */
+
+/* WEB - S */
+.web-sec {
+  padding: 150px 0 250px;
+  border-top: solid 2px #a6c6f2;
+}
+.web-sec .inner {}
+.web-sec .inner .tit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.swiperweb-wrap {}
+.web-wrap .swiper-slide,
+.plan-swiper .swiper-slide {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.web-wrap .swiper-slide .web-wrap-list {}
+.web-wrap .swiper-slide .web-wrap-list .canon-web {}
+.web-wrap .swiper-slide .web-wrap-tit {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+.web-wrap .swiper-slide .canon-web p {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.web-wrap .swiper-slide .canon-web .canon-wrap-reason {}
+.web-wrap .swiper-slide .canon-web .canon-wrap-tool {
+  color: #888888;
+}
+.web-wrap .swiper-slide .canon-web .canon-wrap-img img {
+  margin-bottom: 20px;
+}
+.web-wrap .swiper-slide .web-wrap-list .cafe-web p {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+.web-wrap .web-wrap-list .cafe-web .cafe-wrap-reason {}
+.web-wrap .web-wrap-list .cafe-web .cafe-wrap-tool {
+  color: #888888;
+}
+.web-wrap .web-wrap-list .cafe-web .cafe-wrap-img img {
+  margin-bottom: 20px;
+}
+.web-wrap .swiper-slide .click {
+  display: flex;
+}
+.web-wrap .swiper-slide .click a {
+  margin-right: 10px;
+}
+.web-wrap .swiper-slide .concept-open {
+  font-size: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: solid 2px #7296c8;
+  border-radius: 10px;
+
+}
+.web-wrap .swiper-slide .shortcut {
+  font-size: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: solid 2px #7296c8;
+  border-radius: 10px;
+}
+
+.web-wrap .swiper-slide .concept-open:hover {
+  background-color: #7296c8;
+  color: #fff;
+  transition: all 0.3s;
+}
+.web-wrap .swiper-slide .shortcut:hover {
+  background-color: #7296c8;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* WEB - E */
+
+/* PROMOTION - S */
+.promotion-sec {
+  padding-bottom: 200px;
+}
+.promotion-sec .inner {}
+.promotion-sec .inner .tit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.promotion-sec .inner .promotion-wrap {}
+.promotion-wrap .promotion-wrap-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.promotion-wrap .promotion-wrap-box .promotion-wrap-list {}
+.promotion-wrap-box .promotion-wrap-list .promotion-img img {
+  box-shadow: 3px 3px 3px 3px #999999;
+}
+.promotion-wrap-box .promotion-wrap-list .promotion-wrap-tit {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 25px 0 10px;
+}
+.promotion-wrap-box .promotion-wrap-list .promotion-airpods {}
+.promotion-wrap-box .promotion-wrap-list .promotion-airpods p {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 45px;
+}
+.promotion-wrap-box .promotion-wrap-list .concept-open {}
+.promotion-wrap-box .promotion-wrap-list .promotion-perfume {}
+.promotion-wrap-box .promotion-wrap-list .promotion-perfume p {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 45px;
+}
+.promotion-wrap-box .promotion-wrap-list .concept-open {
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 2px #7296c8;
+  border-radius: 10px;
+}
+.promotion-wrap-box .promotion-wrap-list .concept-open:hover {
+  background-color: #7296c8;
+  color: #fff;
+  transition: all 0.3s;
+}
+/* PROMOTION - E */
+
+/* PLAN - S */
+.plan-sec {
+  padding: 100px 0 150px;
+}
+.plan-sec .inner {}
+.plan-sec .inner .tit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.plan-swiper-all {}
+.plan-swiper .swiper-slide {}
+.plan-swiper .swiper-slide .plan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plan-swiper .swiper-slide .plan-box .plan-wrap-img {}
+.plan-swiper .swiper-slide .plan-box .plan-wrap-img img {}
+.plan-swiper .swiper-slide .plan-box .plan-wrap-tit {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 0 25px;
+}
+.plan-swiper .swiper-slide .plan-box .plan-wrap-desc {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.plan-swiper .swiper-slide .plan-box .link {
+  font-size: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: solid 2px #7296c8;
+  border-radius: 10px;
+}
+.plan-swiper .swiper-slide .plan-box .link:hover {
+  background-color: #7296c8;
+  color: #fff;
+  transition: all 0.3s;
+}
+/* PLAN - E */
+
+/**********
+MAIN - E
+**********/
+
+/**********
+FOOTER - S
+**********/
+.footer {
+  height: 100px;
+  background-color: #7296c8;
+}
+.footer .inner {}
+.contact-wrap {
+  color: #fff;
+}
+.contact-wrap .contact-tit {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 15px 0 10px;
+}
+.contact-wrap .contact-desc {
+  font-size: 18px;
+
+}
+/**********
+FOOTER - E
+**********/
